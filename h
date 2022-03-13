@@ -90,7 +90,7 @@ function library:CreateWatermark(name, position)
     
     watermark.mainbar = Instance.new("Frame", watermark.main)
     watermark.mainbar.Name = "Main"
-    watermark.mainbar.BorderColor3 = Color3.fromRGB(249,233,236)
+    watermark.mainbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
     watermark.mainbar.Visible = watermark.Visible
     watermark.mainbar.BorderSizePixel = 1
     watermark.mainbar.ZIndex = 5
