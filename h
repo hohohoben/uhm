@@ -92,14 +92,14 @@ function library:CreateWatermark(name, position)
     watermark.mainbar.Name = "Main"
     watermark.mainbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
     watermark.mainbar.Visible = watermark.Visible
-    watermark.mainbar.BorderSizePixel = 1
+    watermark.mainbar.BorderSizePixel = 0
     watermark.mainbar.ZIndex = 5
     watermark.mainbar.Position = UDim2.new(0, position and position.X or 10, 0, position and position.Y or 10)
     watermark.mainbar.Size = UDim2.new(0, 0, 0, 25)
 
     watermark.Gradient = Instance.new("UIGradient", watermark.mainbar)
     watermark.Gradient.Rotation = 90
-    watermark.Gradient.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0.00, Color3.fromRGB(249, 233, 236)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255)) })
+    watermark.Gradient.Color = ColorSequence.new({ ColorSequenceKeypoint.new(0.00, Color3.fromRGB(35, 35, 35)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(10, 10, 10)) })
 
     watermark.Outline = Instance.new("Frame", watermark.mainbar)
     watermark.Outline.Name = "outline"
